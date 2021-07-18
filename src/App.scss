@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;500;600;700&display=swap");
+.all-bg {
+  background-image: url(https://aginamena.github.io/Planets-fact-site/static/media/background-stars.f6233a6a.svg);
+  background-color: #070724;
+  font-family: "Spartan", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+  color: white;
+  font-family: "Antonio", sans-serif;
+
+  .logo {
+    font-size: 2.3rem;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      font-family: "Spartan", sans-serif;
+      letter-spacing: 1px;
+      line-height: 25px;
+      font-weight: 700;
+      font-size: 11px;
+      padding: 0 0.5rem;
+      user-select: none !important;
+      cursor: pointer;
+    }
+  }
+}
+
+.info {
+
+    ul{
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0;
+        li.active{
+            background-color: var(--selected-color);
+
+            &:hover{
+                background-color: var(--selected-color) !important;
+
+            }
+        }
+        li{ 
+            list-style: none;
+            border: 1px solid rgba(170, 170, 170, 0.356);
+            display: flex;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            align-items: center;
+            font-size: 13px;
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(170, 170, 170, 0.356);
+            }
+            .number{
+                color: #aaa;
+                margin-right: 1rem;
+                user-select: none !important;
+
+            }
+
+            .caption{
+                color: white;
+                user-select: none !important;
+            }
+        }
+    }
+
+
+  .title {
+    color:var(--selected-color);        
+    font-family: "Antonio", sans-serif;
+    font-size: 5rem;
+  }
+
+  p{
+      color: white;
+      font-size: 14px;
+  }
+
+  .source{
+      color: #aaa;
+      font-size: 13px;
+        a{
+            color: #aaa;
+
+        }
+    }
+}
+.planet-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+    .sol,.sag{
+        width: 40%;
+    }
+    img{
+        width: 300px;
+    }
+}
+
+.detail-container{
+    width: 100%;
+    font-family: "Spartan", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    .detail-box{
+        
+        padding:0.5rem 2rem;
+       border: 1px solid rgba(255, 255, 255, 0.363);
+    }
+
+    .detail-title{
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.363);
+    }
+
+    .detail-caption{
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: "Antonio", sans-serif;
+
+    }
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
